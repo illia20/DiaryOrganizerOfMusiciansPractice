@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="7dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="7dp"
+    android:background="@drawable/list_back">
+
+        <ImageView
+            android:id="@+id/imgsong"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_list_elem"
+            android:gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+        <TextView
+            android:id="@+id/workname"
+            android:layout_toEndOf="@id/imgsong"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="Work name"
+            android:textSize="17sp"
+            android:autoSizeMaxTextSize="17sp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:id="@+id/workstatus"
+            android:layout_toEndOf="@id/workname"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:background="@drawable/etback"
+            android:text="Work status"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+</LinearLayout>

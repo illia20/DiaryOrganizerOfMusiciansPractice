@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="17sp"
+        android:src="@mipmap/ic_custom_round"
+        app:flow_horizontalAlign="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        android:textSize="14sp"
+        android:padding="10sp"
+        android:text="\'\'Diary-organizer for musician\'s practice\'\' is the application developed as the bachelor qualification work. The developer is a 4th year student in Taras Shevchenko National University of Kyiv, faculty of computer science and cybernetics, TTP-4 group Illia Dubinin. The work was supervised by Associate Professor Viktor M. Volokhov."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
